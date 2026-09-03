@@ -5,7 +5,7 @@
     cursor_text_color {{ colors.on_primary.default.hex }}
 
     # Backgrounds
-    background {{ colors.on_secondary.default.hex }}
+    background {{ colors.background.default.hex }}
     foreground {{ colors.on_surface.default.hex }}
     selection_foreground {{ colors.background.default.hex }}
     selection_background {{ colors.on_surface.default.hex }}

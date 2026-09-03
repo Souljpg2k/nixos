@@ -13,8 +13,6 @@
     ./matugen/rofi.nix
     ./matugen/btop.nix
     ./matugen/quickshell.nix
-    ./matugen/zen-userchrome.nix
-    ./matugen/zen-usercontent.nix
   ];
 
   home.file.".config/matugen/config.toml".text = ''
@@ -51,13 +49,5 @@
     input_path = '~/.config/matugen/templates/mako-colors'
     output_path = '~/.config/mako/colors'
     post_hook = 'makoctl reload'
-
-    [templates.zen-userchrome]
-    input_path = '~/.config/matugen/templates/zen-userchrome.css'
-    output_path = '~/.zen/yey404x5.Default Profile/chrome/userChrome.css'
-
-    [templates.zen-usercontent]
-    input_path = '~/.config/matugen/templates/zen-usercontent.css'
-    output_path = '~/.zen/yey404x5.Default Profile/chrome/userContent.css'
   '';
 }

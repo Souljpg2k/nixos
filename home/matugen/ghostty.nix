@@ -1,6 +1,6 @@
 {
   home.file.".config/matugen/templates/ghostty".text = ''
-    background = {{colors.on_secondary.default.hex}}
+    background = {{colors.background.default.hex}}
     foreground = {{colors.on_surface.default.hex}}
     cursor-color = {{colors.primary.default.hex}}
     cursor-text = {{colors.on_primary.default.hex}}

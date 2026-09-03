@@ -1,7 +1,7 @@
 {
   home.file.".config/matugen/templates/rofi-colors.rasi".text = ''
     * {
-        background: {{colors.on_secondary.default.hex}};
+        background: {{colors.background.default.hex}};
         border-color: {{colors.inverse_on_surface.default.hex}};
         selected: {{colors.surface_container_high.default.hex}};
         primary: {{colors.on_background.default.hex}};
