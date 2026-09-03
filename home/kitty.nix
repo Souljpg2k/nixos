@@ -22,7 +22,7 @@
       copy_on_select = "yes";
 
       window_padding_width = 15;
-      background_opacity = "0.98";
+      background_opacity = "0.97";
     };
   };
 }

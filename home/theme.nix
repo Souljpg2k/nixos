@@ -13,12 +13,12 @@
 
     theme = {
       package = pkgs.whitesur-gtk-theme;
-      name = "WhiteSur-light";
+      name = "WhiteSur-dark";
     };
 
     iconTheme = {
       package = pkgs.whitesur-icon-theme;
-      name = "WhiteSur-light";
+      name = "WhiteSur-dark";
     };
 
     font = {
@@ -29,7 +29,7 @@
 
   dconf.settings = {
     "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-light";
+      color-scheme = "prefer-dark";
       document-font-name = "SF Pro Text Medium 12";
       monospace-font-name = "SF Mono Medium 12";
     };
