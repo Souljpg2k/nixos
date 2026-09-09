@@ -21,7 +21,6 @@
     ./spicetify.nix
     ./mpv.nix
     ./matugen.nix
-    ./neovim.nix
   ];
 
   home.packages = with pkgs; [
@@ -53,6 +52,7 @@
     nixfmt
     psmisc
     obsidian
+    tor-browser
     kdePackages.dolphin
     inputs.helium-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default

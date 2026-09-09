@@ -46,6 +46,7 @@
   environment.systemPackages = with pkgs; [
     wget
     bun
+    vim
     unzip
   ];
 
