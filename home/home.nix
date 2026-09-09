@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   home.username = "arx";
@@ -16,46 +16,15 @@
     ./rofi.nix
     ./starship.nix
     ./hypridle.nix
-    ./theme.nix
     ./fonts.nix
     ./spicetify.nix
     ./mpv.nix
-    ./matugen.nix
+    ./themes/theme.nix
+    ./themes/matugen.nix
+    ./pkgs/applications.nix
+    ./pkgs/cli-tools.nix
+    ./pkgs/desktop.nix
   ];
 
-  home.packages = with pkgs; [
-    awww
-    brave
-    discord
-    vscode
-    git
-    quickshell
-    qt6.qtdeclarative
-    qt6.qtimageformats
-    bibata-cursors
-    cliphist
-    wl-clipboard
-    libnotify
-    imagemagick
-    hyprshot
-    hypridle
-    hyprpicker
-    hyprsunset
-    hyprshutdown
-    hyprpolkitagent
-    obs-studio
-    pavucontrol
-    ffmpegthumbnailer
-    yt-dlp
-    yazi
-    loupe
-    nixfmt
-    psmisc
-    obsidian
-    tor-browser
-    kdePackages.dolphin
-    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-  ];
-  
   programs.home-manager.enable = true;
 }

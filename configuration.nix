@@ -1,8 +1,10 @@
-{ config, pkgs, ... }:
-
 {
   imports = [
     ./hardware-configuration.nix
+    ./modules/users.nix
+    ./modules/syncthing.nix
+    ./modules/desktop.nix
+    ./modules/packages.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -27,52 +29,10 @@
   };
 
   services.xserver.xkb = {
-    layout = "us";
+    layout = "us,th";
     variant = "";
+    options = "grp:win_space_toggle";
   };
-
-  users.users."arx" = {
-    isNormalUser = true;
-    description = "arx";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-    ];
-    packages = with pkgs; [ ];
-  };
-
-  services.syncthing = {
-    enable = true;
-    openDefaultPorts = true;
-    user = "arx";
-    group = "users";
-    dataDir = "/home/arx/.local/share/syncthing";
-    configDir = "/home/arx/.config/syncthing";
-  };
-
-  nixpkgs.config.allowUnfree = true;
-
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
-
-  environment.systemPackages = with pkgs; [
-    wget
-    bun
-    vim
-    unzip
-    usbutils
-  ];
-
-  programs.hyprland.enable = true;
-
-  services.udisks2.enable = true;
-  services.gvfs.enable = true;
-
-  environment.etc."xdg/menus/applications.menu".source =
-    "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
 
   system.stateVersion = "26.05";
-
 }
