@@ -27,7 +27,6 @@
     awww
     brave
     vscode
-    code-cursor
     git
     quickshell
     qt6.qtdeclarative
