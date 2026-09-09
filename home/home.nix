@@ -26,6 +26,7 @@
   home.packages = with pkgs; [
     awww
     brave
+    discord
     vscode
     git
     quickshell
