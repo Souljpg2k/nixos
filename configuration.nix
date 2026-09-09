@@ -1,10 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -35,13 +34,28 @@
   users.users."arx" = {
     isNormalUser = true;
     description = "arx";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+    packages = with pkgs; [ ];
+  };
+
+  services.syncthing = {
+    enable = true;
+    openDefaultPorts = true;
+    user = "arx";
+    group = "users";
+    dataDir = "/home/arx/.local/share/syncthing";
+    configDir = "/home/arx/.config/syncthing";
   };
 
   nixpkgs.config.allowUnfree = true;
-  
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   environment.systemPackages = with pkgs; [
     wget
@@ -51,12 +65,13 @@
     usbutils
   ];
 
-  environment.etc."xdg/menus/applications.menu".source =
-  "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
-
   programs.hyprland.enable = true;
+
   services.udisks2.enable = true;
   services.gvfs.enable = true;
+
+  environment.etc."xdg/menus/applications.menu".source =
+    "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
 
   system.stateVersion = "26.05";
 
