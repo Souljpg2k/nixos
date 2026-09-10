@@ -16,5 +16,6 @@
     tree
     usbutils
     pciutils
+    xdg-utils
   ];
 }
