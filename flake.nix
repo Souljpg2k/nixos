@@ -41,7 +41,7 @@
         };
 
         modules = [
-          ./configuration.nix
+          ./hosts/nixos
 
           home-manager.nixosModules.home-manager
 

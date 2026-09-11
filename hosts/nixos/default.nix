@@ -1,10 +1,10 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./modules/users.nix
-    ./modules/syncthing.nix
-    ./modules/desktop.nix
-    ./modules/packages.nix
+    ../../modules/users.nix
+    ../../modules/syncthing.nix
+    ../../modules/desktop.nix
+    ../../modules/packages.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
