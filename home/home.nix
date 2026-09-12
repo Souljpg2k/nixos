@@ -25,6 +25,6 @@
     ./pkgs/cli-tools.nix
     ./pkgs/desktop.nix
   ];
-
+  
   programs.home-manager.enable = true;
 }

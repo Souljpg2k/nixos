@@ -11,9 +11,12 @@
   environment.systemPackages = with pkgs; [
     wget
     bun
+    go
+    python3
     vim
     curl
     tree
+    gcc
     usbutils
     pciutils
     xdg-utils
