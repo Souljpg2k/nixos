@@ -13,5 +13,6 @@
     ffmpegthumbnailer
     wl-clipboard
     libnotify
+    playerctl
   ];
 }
