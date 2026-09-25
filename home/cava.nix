@@ -24,7 +24,7 @@
       };
 
       color = {
-        theme = "matugen";
+        foreground = "'#e0e0ff'";
       };
 
       smoothing = {

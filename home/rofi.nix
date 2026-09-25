@@ -2,7 +2,15 @@
   programs.rofi.enable = true;
 
   xdg.configFile."rofi/config.rasi".text = ''
-    @import "colors.rasi"
+    * {
+        background: #151318;
+        border-color: #303036;
+        selected: #2a292f;
+        primary: #e4e1e9;
+        text-selected: #e4e1e9;
+        text-element: #91909a;
+        error-message: #ffabe0;
+    }
 
     configuration {
         show-icons: true;

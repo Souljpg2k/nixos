@@ -19,8 +19,7 @@
     ./fonts.nix
     ./spicetify.nix
     ./mpv.nix
-    ./themes/theme.nix
-    ./themes/matugen.nix
+    ./theme.nix
     ./pkgs/applications.nix
     ./pkgs/cli-tools.nix
     ./pkgs/desktop.nix

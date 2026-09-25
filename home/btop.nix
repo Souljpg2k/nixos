@@ -3,7 +3,7 @@
     enable = true;
 
     settings = {
-      color_theme = "matugen.theme";
+      color_theme = "caelestia.theme";
       theme_background = false;
       update_ms = 2000;
     };
