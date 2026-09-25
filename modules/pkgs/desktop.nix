@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    awww
     qt6.qtdeclarative
     qt6.qtimageformats
     bibata-cursors

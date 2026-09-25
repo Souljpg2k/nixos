@@ -1,9 +1,8 @@
+{ pkgs, ... }:
+
 {
   imports = [
     ./hardware-configuration.nix
-    ../../modules/syncthing.nix
-    ../../modules/desktop.nix
-    ../../modules/packages.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -30,7 +29,6 @@
   users.users.arx = {
     isNormalUser = true;
     description = "arx";
-
     extraGroups = [
       "networkmanager"
       "wheel"
@@ -42,6 +40,43 @@
     variant = "";
     options = "grp:win_space_toggle";
   };
+  services.udisks2.enable = true;
+  services.gvfs.enable = true;
+  services.upower.enable = true;
+  services.power-profiles-daemon.enable = true;
+
+  nixpkgs.config.allowUnfree = true;
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
+
+  environment.systemPackages = with pkgs; [
+    wget
+    bun
+    go
+    python3
+    vim
+    curl
+    tree
+    gcc
+    usbutils
+    pciutils
+    xdg-utils
+  ];
+
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
+  xdg.portal.enable = true;
+  xdg.mime.defaultApplications = {
+    "inode/directory" = "org.kde.dolphin.desktop";
+  };
+
+  environment.etc."xdg/menus/applications.menu".source =
+    "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
 
   system.stateVersion = "26.05";
 }

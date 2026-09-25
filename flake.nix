@@ -56,7 +56,7 @@
         };
 
         modules = [
-          ./hosts/nixos
+          ./modules/hosts/nixos
 
           home-manager.nixosModules.home-manager
 
@@ -73,7 +73,7 @@
               inputs.spicetify-nix.homeManagerModules.spicetify
             ];
 
-            home-manager.users.arx = import ./home/home.nix;
+            home-manager.users.arx = import ./home.nix;
           }
         ];
       };
