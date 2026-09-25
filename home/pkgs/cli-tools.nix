@@ -4,6 +4,8 @@
   home.packages = with pkgs; [
     git
     nixfmt
+    neovim
+    nil
     unzip
     tree
     psmisc
