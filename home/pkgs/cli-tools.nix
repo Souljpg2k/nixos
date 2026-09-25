@@ -16,10 +16,6 @@
     wl-clipboard
     libnotify
     playerctl
-    tty-clock
-    cmatrix
-    lavat
-    asciiquarium
     ani-cli
   ];
 }
