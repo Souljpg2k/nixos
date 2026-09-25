@@ -1,7 +1,6 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../modules/users.nix
     ../../modules/syncthing.nix
     ../../modules/desktop.nix
     ../../modules/packages.nix
@@ -26,6 +25,16 @@
     LC_PAPER = "th_TH.UTF-8";
     LC_TELEPHONE = "th_TH.UTF-8";
     LC_TIME = "th_TH.UTF-8";
+  };
+
+  users.users.arx = {
+    isNormalUser = true;
+    description = "arx";
+
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
   };
 
   services.xserver.xkb = {

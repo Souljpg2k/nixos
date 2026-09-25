@@ -1,9 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   home.packages = with pkgs; [
     awww
-    quickshell
     qt6.qtdeclarative
     qt6.qtimageformats
     bibata-cursors
@@ -14,5 +13,7 @@
     hyprsunset
     hyprshutdown
     hyprpolkitagent
+    inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.caelestia-shell.packages.${pkgs.stdenv.hostPlatform.system}.with-cli
   ];
 }
