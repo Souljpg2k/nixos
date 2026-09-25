@@ -20,7 +20,7 @@
       copy_on_select = "yes";
 
       window_padding_width = 15;
-      background_opacity = "0.5";
+      background_opacity = "0.95";
 
       background = "#201f24";
       foreground = "#e6e1e9";

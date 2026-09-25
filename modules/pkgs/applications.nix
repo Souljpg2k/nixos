@@ -5,6 +5,7 @@
     brave
     discord
     vscode
+    zed-editor
     obs-studio
     pavucontrol
     loupe
