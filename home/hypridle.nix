@@ -4,7 +4,7 @@
 
     settings = {
       general = {
-        lock_cmd = ''hyprctl dispatch 'hl.dsp.global("quickshell:lock")' '';
+        lock_cmd = ''hyprctl dispatch 'hl.dsp.global("caelestia:lock")' '';
         before_sleep_cmd = "loginctl lock-session";
         after_sleep_cmd = ''hyprctl dispatch 'hl.dsp.dpms({ action = "enable" })' '';
       };
