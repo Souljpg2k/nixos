@@ -6,9 +6,9 @@
       starship init fish | source
     '';
     shellAbbrs = {
-      re = "sudo nixos-rebuild switch --flake ~/.config/nixos#nixos";
+      re = "sudo nixos-rebuild switch --flake ~/nixos#nixos";
       cg = "sudo nix-collect-garbage -d";
-      up = "nix flake update --flake ~/.config/nixos";
+      up = "nix flake update --flake ~/nixos";
       ff = "fastfetch";
     };
   };
