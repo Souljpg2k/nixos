@@ -18,5 +18,6 @@
     cmatrix
     lavat
     asciiquarium
+    ani-cli
   ];
 }
