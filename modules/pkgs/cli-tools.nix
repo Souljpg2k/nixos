@@ -6,6 +6,7 @@
     nixfmt
     neovim
     nil
+    fzf
     unzip
     tree
     psmisc
