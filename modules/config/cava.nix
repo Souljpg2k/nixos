@@ -24,7 +24,7 @@
       };
 
       color = {
-        foreground = "'#7fb8e5'";
+        foreground = "'#b7c4ff'";
       };
 
       smoothing = {
