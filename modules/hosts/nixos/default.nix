@@ -70,6 +70,20 @@
     xwayland.enable = true;
   };
 
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      stdenv.cc.cc
+      zlib
+    ];
+  };
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
   xdg.portal.enable = true;
   xdg.mime.defaultApplications = {
     "inode/directory" = "org.kde.dolphin.desktop";
