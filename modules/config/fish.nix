@@ -24,5 +24,9 @@
       ff = "fastfetch";
       c = "clear";
     };
+
+    shellAliases = {
+      ani-cli = "~/.ani-cli-latest/ani-cli";
+    };
   };
 }
