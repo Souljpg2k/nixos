@@ -11,39 +11,35 @@
 
     settings = {
       shell = "fish";
-
       cursor_shape = "beam";
       cursor_trail = 1;
       cursor_blink_interval = "0.5";
-
       confirm_os_window_close = 0;
       copy_on_select = "yes";
-
       window_padding_width = 15;
       background_opacity = "0.95";
 
-      background = "#201f24";
-      foreground = "#e6e1e9";
-      selection_foreground = "#141318";
-      selection_background = "#e6e1e9";
-      url_color = "#cbc3dc";
-
-      color0 = "#2b292f";
-      color8 = "#938f99";
-      color1 = "#efb8c9";
-      color9 = "#ffb4ab";
-      color2 = "#cebdff";
-      color10 = "#e7def8";
-      color3 = "#cbc3dc";
-      color11 = "#e7def8";
-      color4 = "#cebdff";
-      color12 = "#e6e1e9";
-      color5 = "#cbc3dc";
-      color13 = "#cbc3dc";
-      color6 = "#e7def8";
-      color14 = "#efb8c9";
-      color7 = "#cac4cf";
-      color15 = "#e6e1e9";
+      background = "#1b1a22";
+      foreground = "#d4d2ef";
+      selection_foreground = "#1b1a22";
+      selection_background = "#9b8cff";
+      url_color = "#9b8cff";
+      color0 = "#555161";
+      color8 = "#6a6576";
+      color1 = "#ff9bd0";
+      color9 = "#ffc0e2";
+      color2 = "#8af5f1";
+      color10 = "#a5fff9";
+      color3 = "#f0f28a";
+      color11 = "#f7f8a8";
+      color4 = "#c4c0ff";
+      color12 = "#d9d5ff";
+      color5 = "#a99cff";
+      color13 = "#c2baff";
+      color6 = "#a9d8ff";
+      color14 = "#c7e7ff";
+      color7 = "#dfdcf5";
+      color15 = "#f2efff";
     };
   };
 }
