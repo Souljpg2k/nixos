@@ -84,6 +84,10 @@
     options = "--delete-older-than 7d";
   };
 
+  hardware.opentabletdriver.enable = true;
+  hardware.uinput.enable = true;
+  boot.kernelModules = [ "uinput" ];
+
   xdg.portal.enable = true;
   xdg.mime.defaultApplications = {
     "inode/directory" = "org.kde.dolphin.desktop";

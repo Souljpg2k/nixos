@@ -11,12 +11,12 @@
     tree
     psmisc
     yt-dlp
+    ffmpeg
     yazi
     imagemagick
     ffmpegthumbnailer
     wl-clipboard
     libnotify
-    playerctl
-    ani-cli
+
   ];
 }
