@@ -9,7 +9,6 @@
     hyprshot
     hypridle
     hyprpicker
-    hyprsunset
     hyprshutdown
     hyprpolkitagent
     inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
