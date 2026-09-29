@@ -40,11 +40,13 @@
     variant = "";
     options = "grp:win_space_toggle";
   };
+  
   services.udisks2.enable = true;
   services.gvfs.enable = true;
+  
   services.upower.enable = true;
   services.power-profiles-daemon.enable = true;
-
+  
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [
     "nix-command"
