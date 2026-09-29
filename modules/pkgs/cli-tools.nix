@@ -12,11 +12,9 @@
     psmisc
     yt-dlp
     ffmpeg
-    yazi
     imagemagick
     ffmpegthumbnailer
     wl-clipboard
     libnotify
-
   ];
 }

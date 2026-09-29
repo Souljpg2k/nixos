@@ -52,7 +52,6 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    wget
     bun
     go
     python3
@@ -62,20 +61,11 @@
     gcc
     usbutils
     pciutils
-    xdg-utils
   ];
 
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-  };
-
-  programs.nix-ld = {
-    enable = true;
-    libraries = with pkgs; [
-      stdenv.cc.cc
-      zlib
-    ];
   };
 
   nix.gc = {

@@ -22,7 +22,6 @@
       cg = "sudo nix-collect-garbage -d";
       up = "nix flake update --flake ~/nixos";
       ff = "fastfetch";
-      c = "clear";
     };
 
     shellAliases = {
