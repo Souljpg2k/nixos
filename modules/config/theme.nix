@@ -22,7 +22,7 @@
     };
 
     font = {
-      name = "SF Pro Text";
+      name = "Inter";
       size = 12;
     };
   };

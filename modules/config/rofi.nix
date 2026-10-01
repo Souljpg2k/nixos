@@ -15,7 +15,7 @@
     configuration {
         show-icons: true;
         location: 2;
-        font: "SF Pro Rounded Medium 12";
+        font: "Inter Medium 12";
         display-drun: " ";
         display-run: " ";
     }
