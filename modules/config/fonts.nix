@@ -42,6 +42,7 @@
     lxgw-wenkai
     noto-fonts
     nerd-fonts.jetbrains-mono
+    open-sans
     material-symbols
     inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro
     inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-mono
