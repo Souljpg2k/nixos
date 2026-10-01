@@ -6,7 +6,7 @@
 
     defaultFonts = {
       sansSerif = [
-        "SF Pro Display"
+        "Inter"
         "Sarabun"
         "IPAexGothic"
         "NanumGothic"
@@ -15,7 +15,7 @@
       ];
 
       serif = [
-        "New York"
+        "Libre Baskerville"
         "Sarabun"
         "IPAexMincho"
         "NanumMyeongjo"
@@ -24,7 +24,6 @@
       ];
 
       monospace = [
-        "SF Mono"
         "JetBrainsMono Nerd Font"
         "Noto Sans Mono"
       ];
@@ -40,12 +39,10 @@
     ipaexfont
     nanum
     lxgw-wenkai
+    libre-baskerville
     noto-fonts
     nerd-fonts.jetbrains-mono
-    open-sans
+    inter
     material-symbols
-    inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro
-    inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-mono
-    inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.ny
   ];
 }
