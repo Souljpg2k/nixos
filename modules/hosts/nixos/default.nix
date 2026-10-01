@@ -59,10 +59,17 @@
     python3
     vim
     curl
+    zip
     tree
     gcc
     usbutils
     pciutils
+    flutter
+    cmake
+    clang
+    ninja
+    pkg-config
+    gtk3
   ];
 
   programs.hyprland = {
