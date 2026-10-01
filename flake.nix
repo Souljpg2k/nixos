@@ -14,6 +14,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    m3shapes = {
+      url = "github:soramanew/m3shapes";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     caelestia-shell = {
       url = "github:caelestia-dots/shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -43,7 +48,7 @@
         specialArgs = {
           inherit inputs;
         };
- 
+
         modules = [
           ./modules/hosts/nixos
           home-manager.nixosModules.home-manager

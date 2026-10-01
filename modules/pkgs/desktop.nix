@@ -13,5 +13,6 @@
     hyprpolkitagent
     inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.caelestia-shell.packages.${pkgs.stdenv.hostPlatform.system}.with-cli
+    inputs.m3shapes.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
