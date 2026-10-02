@@ -5,6 +5,10 @@ let
 in
 
 {
+  imports = [
+    inputs.spicetify-nix.homeManagerModules.spicetify
+  ];
+
   programs.spicetify = {
     enable = true;
     enabledExtensions = with spicePkgs.extensions; [

@@ -60,9 +60,6 @@
             home-manager.extraSpecialArgs = {
               inherit inputs;
             };
-            home-manager.sharedModules = [
-              inputs.spicetify-nix.homeManagerModules.spicetify
-            ];
             home-manager.users.arx = import ./home.nix;
           }
         ];

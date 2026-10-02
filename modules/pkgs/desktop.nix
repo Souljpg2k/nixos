@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     qt6.qtdeclarative
     qt6.qtimageformats
+    qtengine
     bibata-cursors
     cliphist
     hyprshot
