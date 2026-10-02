@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     git
     nixfmt
+    cava
     neovim
     nil
     fzf
