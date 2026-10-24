@@ -205,6 +205,7 @@ hl.bind("SUPER + SHIFT + F", hl.dsp.exec_cmd("fuzzel"))
 
 -- Quickshell btw
 hl.bind("SUPER + SHIFT + T", hl.dsp.global("kino:bar"))
+hl.bind("SUPER + O", hl.dsp.global("kino:clock"))
 
 -- Rofi
 hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -show drun"))

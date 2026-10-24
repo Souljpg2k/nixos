@@ -24,7 +24,6 @@
         "Noto Serif"
       ];
       monospace = [
-        "DejaVu Sans Mono"
         "Hack Nerd Font"
         "JetBrainsMono Nerd Font"
       ];
@@ -41,6 +40,7 @@
     noto-fonts
     nerd-fonts.hack
     nerd-fonts.jetbrains-mono
+    nerd-fonts.symbols-only
     dejavu_fonts
     sarabun-font
     kanit-font
