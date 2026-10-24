@@ -38,15 +38,6 @@ in
       inherit theme iconTheme font;
     };
   };
-
-  xdg.configFile."qt6ct/qt6ct.conf".text = ''
-    [Appearance]
-    icon_theme=WhiteSur-light
-    style=kvantum
-  '';
-  xdg.configFile."Kvantum/kvantum.kvconfig".text = ''
-    [General]
-    theme=KvGnomeAlt
-  '';
+  
   dconf.settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
 }
